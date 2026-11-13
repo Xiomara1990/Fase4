@@ -1,0 +1,15 @@
+2026-11-12 21:22:16,871 - INFO - Operacion 1: Registrar cliente valido
+2026-11-12 21:22:16,873 - ERROR - Operacion 2: El correo no es valido
+2026-11-12 21:22:16,874 - ERROR - Operacion 3: El telefono debe contener numeros
+2026-11-12 21:22:16,875 - ERROR - Operacion 4: El nombre es obligatorio
+2026-11-12 21:22:16,877 - ERROR - Operacion 5: El cliente ya existe
+2026-11-12 21:22:16,878 - INFO - Operacion 6: Crear reserva de sala valida
+2026-11-12 21:22:16,879 - ERROR - Operacion 7: El precio debe ser mayor que cero
+2026-11-12 21:22:16,881 - INFO - Operacion 8: Crear alquiler de equipo valido
+2026-11-12 21:22:16,883 - ERROR - Operacion 9: Can't instantiate abstract class Asesoria without an implementation for abstract method 'validar_parametros'
+2026-11-12 21:22:16,885 - ERROR - Operacion 10: El servicio ya existe
+2026-11-12 21:22:16,887 - INFO - Operacion 11: Reserva de sala confirmada y procesada
+2026-11-12 21:22:16,889 - ERROR - Operacion 12: La reserva debe estar confirmada
+2026-11-12 21:22:16,890 - ERROR - Operacion 13: 'NoneType' object has no attribute 'disponible' and no __dict__ for setting new attributes
+2026-11-12 21:22:16,891 - ERROR - Operacion 14: La reserva ya esta cancelada
+2026-11-12 21:22:16,896 - ERROR - Operacion 15: No fue posible calcular el costo de la reserva

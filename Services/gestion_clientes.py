@@ -1,35 +1,34 @@
-
-# Administracion de servicios
+# Administracion de clientes
 
 from models.excepciones import DatosInvalidosError
 
 
-class GestionServicios:
+class GestionClientes:
 
     def __init__(self):
-        self.servicios = []
+        self.clientes = []
 
-    def agregar_servicio(self, servicio):
+    def agregar_cliente(self, cliente):
 
-        if servicio is None:
-            raise DatosInvalidosError("Debe ingresar un servicio")
+        if cliente is None:
+            raise DatosInvalidosError("Debe ingresar un cliente")
 
-        for registrado in self.servicios:
-            if registrado.nombre == servicio.nombre:
-                raise DatosInvalidosError("El servicio ya existe")
+        for registrado in self.clientes:
+            if registrado.obtener_identificacion() == cliente.obtener_identificacion():
+                raise DatosInvalidosError("El cliente ya existe")
 
-        self.servicios.append(servicio)
-        print("Servicio agregado correctamente")
+        self.clientes.append(cliente)
+        print("Cliente agregado correctamente")
 
-    def mostrar_servicios(self):
+    def mostrar_clientes(self):
 
-        for servicio in self.servicios:
-            print(servicio.describir(), "-", servicio.precio)
+        for cliente in self.clientes:
+            print(cliente.describir())
 
-    def buscar_servicio(self, nombre):
+    def buscar_cliente(self, identificacion):
 
-        for servicio in self.servicios:
-            if servicio.nombre == nombre:
-                return servicio
+        for cliente in self.clientes:
+            if cliente.obtener_identificacion() == identificacion:
+                return cliente
 
         return None
