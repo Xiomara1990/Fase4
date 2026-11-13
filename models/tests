@@ -1,0 +1,55 @@
+"""Prueba la clase abstracta Entidad mediante una clase concreta."""
+
+from models.entidad import Entidad
+from models.excepciones import DatosInvalidosError
+
+
+class EntidadPrueba(Entidad):
+    """Clase temporal para comprobar el funcionamiento de Entidad."""
+
+    def describir(self):
+        """Devuelve una descripcion sencilla de la entidad de prueba."""
+        return f"Entidad {self.id_entidad}: {self.nombre}"
+
+
+def probar_entidad_valida():
+    """Comprueba que una entidad valida guarda y expone sus datos."""
+
+    entidad = EntidadPrueba(1, "  Laura Gomez  ")
+
+    print("Prueba 1: entidad valida")
+    print(entidad.describir())
+    print("Identificador:", entidad.id_entidad)
+    print("Nombre:", entidad.nombre)
+
+
+def probar_identificador_invalido():
+    """Comprueba que un identificador invalido lanza una excepcion."""
+
+    print("Prueba 2: identificador invalido")
+
+    try:
+        EntidadPrueba(0, "Laura Gomez")
+    except DatosInvalidosError as error:
+        print("Error esperado:", error)
+    else:
+        print("Error: se acepto un identificador invalido.")
+
+
+def probar_nombre_invalido():
+    """Comprueba que un nombre vacio lanza una excepcion."""
+
+    print("Prueba 3: nombre invalido")
+
+    try:
+        EntidadPrueba(2, "   ")
+    except DatosInvalidosError as error:
+        print("Error esperado:", error)
+    else:
+        print("Error: se acepto un nombre vacio.")
+
+
+if __name__ == "__main__":
+    probar_entidad_valida()
+    probar_identificador_invalido()
+    probar_nombre_invalido()
