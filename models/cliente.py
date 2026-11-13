@@ -5,12 +5,16 @@ from models.excepciones import DatosInvalidosError
 from models.excepciones import ParametroFaltanteError
 
 
+""" Se realiza un ajuste para que el cliente use la clase Entidad y no se reviente
+si por ejemplo el correo o el telefono no son texto"""
 class Cliente(Entidad):
 
-    def __init__(self, nombre, identificacion, correo, telefono):
+    def __init__(self, id_entidad, nombre, identificacion, correo, telefono):
 
-        if not nombre or not nombre.strip():
+        if not isinstance(nombre, str) or not nombre.strip():
             raise ParametroFaltanteError("El nombre es obligatorio")
+
+        super().__init__(id_entidad, nombre) # Se utiliza super() para llamar al constructor de la clase padre y enviar los parametros id_entidad y nombre
 
         if identificacion is None:
             raise ParametroFaltanteError("La identificacion es obligatoria")
@@ -18,10 +22,10 @@ class Cliente(Entidad):
         if not isinstance(identificacion, str) or not identificacion.isdigit():
             raise DatosInvalidosError("La identificacion debe contener numeros")
 
-        if not correo or "@" not in correo:
+        if not isinstance (correo, str) or "@" not in correo:
             raise DatosInvalidosError("El correo no es valido")
 
-        if not telefono or not telefono.isdigit():
+        if not isinstance(telefono, str) or not telefono.isdigit():
             raise DatosInvalidosError("El telefono debe contener numeros")
 
         self.__nombre = nombre.strip()
