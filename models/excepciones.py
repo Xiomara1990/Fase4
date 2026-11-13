@@ -1,6 +1,6 @@
 ##Excepciones personalizadas del sistema Software FJ.##
 
-class ErrorsistemaFJ(Exception):
+class ErrorSistemaFJ(Exception):
   """Representa un error general de nuestra aplicación. """
   pass
 
@@ -12,7 +12,7 @@ class ParametroFaltanteError(ErrorSistemaFJ):
   """indica que no se proporciono un dato obligatorio"""
   pass
 
-class OperaciónNoPermitidaError(ErrorSistemaFJ):
+class OperacionNoPermitidaError(ErrorSistemaFJ):
   """Indica que una accion no esta permitida"""
   pass
   

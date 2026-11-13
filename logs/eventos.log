@@ -1,0 +1,4 @@
+2026-11-12 21:22:16,871 - INFO - Operacion 1: Registrar cliente valido
+2026-11-12 21:22:16,878 - INFO - Operacion 6: Crear reserva de sala valida
+2026-11-12 21:22:16,881 - INFO - Operacion 8: Crear alquiler de equipo valido
+2026-11-12 21:22:16,887 - INFO - Operacion 11: Reserva de sala confirmada y procesada
