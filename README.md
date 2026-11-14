@@ -19,6 +19,7 @@ Se utilizarán archivos para registrar eventos y errores, sin bases de datos.
 ## Integrantes
 - Edna Xiomara González Olivos
 - Paola Andrea González Agudelo
+- Daniel Javier Marin Gutierrez
 
 ## Estado del proyecto
 En desarrollo.
