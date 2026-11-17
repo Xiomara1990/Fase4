@@ -20,6 +20,7 @@ Se utilizarán archivos para registrar eventos y errores, sin bases de datos.
 - Edna Xiomara González Olivos
 - Paola Andrea González Agudelo
 - Daniel Javier Marin Gutierrez
+- Laura Valentina Rodriguez Cardozo
 
 ## Estado del proyecto
 En desarrollo.
