@@ -22,7 +22,7 @@ class GestionClientes:
             if registrado.id_entidad == cliente.id_entidad:
                 raise DatosInvalidosError("El cliente ya existe")
 
-            if registrado.identificacion == cliente.identificacion:
+            if registrado.obtener_identificacion() == cliente.obtener_identificacion():
                 raise DatosInvalidosError("La identificacion ya esta registrada")
 
         self.clientes.append(cliente)
@@ -31,13 +31,12 @@ class GestionClientes:
     def mostrar_clientes(self):
 
         for cliente in self.clientes:
-            print(cliente.mostrar_informacion())
+            cliente.mostrar_informacion()
 
     def buscar_cliente(self, identificacion):
 
         for cliente in self.clientes:
-            if cliente.identificacion == identificacion:
+            if cliente.obtener_identificacion() == identificacion:
                 return cliente
 
         return None
-
