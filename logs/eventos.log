@@ -1,0 +1,23 @@
+2026-11-20 09:48:49,193 - INFO - Cliente agregado: Ana
+2026-11-20 09:48:49,206 - INFO - Cliente agregado: Ana Gomez
+2026-11-20 09:48:49,207 - INFO - Cliente encontrado: 12348
+2026-11-20 09:48:49,208 - INFO - Servicio agregado: Sala de reuniones
+2026-11-20 09:48:49,208 - INFO - Servicio encontrado: Sala de reuniones
+2026-11-20 09:48:49,212 - INFO - Servicio agregado: Sala
+2026-11-20 11:06:47,270 - INFO - Cliente agregado: Ana Lopez
+2026-11-20 11:06:47,275 - INFO - Prueba 1 - Registrar un cliente válido: exitosa
+2026-11-20 11:06:47,279 - INFO - Servicio agregado: Sala A
+2026-11-20 11:06:47,279 - INFO - Prueba 4 - Crear y registrar una sala: exitosa
+2026-11-20 11:06:47,281 - INFO - Servicio agregado: Portatil
+2026-11-20 11:06:47,281 - INFO - Prueba 6 - Crear y registrar un alquiler de equipo: exitosa
+2026-11-20 11:06:47,284 - INFO - Servicio agregado: Asesoria Python
+2026-11-20 11:06:47,284 - INFO - Prueba 7 - Crear y registrar una asesoría: exitosa
+2026-11-20 11:06:47,285 - INFO - Reserva registrada correctamente
+2026-11-20 11:06:47,286 - INFO - Prueba 8 - Crear y registrar una reserva: exitosa
+2026-11-20 11:06:47,289 - INFO - Prueba 9 - Confirmar y procesar una reserva: exitosa
+2026-11-20 11:06:47,290 - INFO - Reserva cancelada correctamente
+2026-11-20 11:06:47,291 - INFO - Prueba 11 - Cancelar una reserva existente: exitosa
+2026-11-20 11:06:47,292 - INFO - Consulta de listado de clientes
+2026-11-20 11:06:47,292 - INFO - Consulta del listado de servicios
+2026-11-20 11:06:47,293 - INFO - Consulta del listado de reservas
+2026-11-20 11:06:47,293 - INFO - Finalización de las pruebas del sistema.
