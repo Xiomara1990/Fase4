@@ -22,12 +22,14 @@ def ejecutar(numero, descripcion, accion):
         registrar_error(
             f"Prueba {numero} - {descripcion}: {error}"
         )
+        return False
 
     else:
         print("Operación realizada correctamente.")
         registrar_evento(
             f"Prueba {numero} - {descripcion}: exitosa"
         )
+        return True
 
     finally:
         print(f"Finalizada prueba {numero}.")
@@ -136,12 +138,12 @@ def main():
     fallidas = 0
 
     for numero, descripcion, accion in operaciones:
-        ejecutar(numero, descripcion, accion)
+        resultado = ejecutar(numero, descripcion, accion)
 
-        if numero in (2, 3, 5, 10, 12):
-            fallidas += 1
-        else:
+        if resultado:
             exitosas += 1
+        else:
+            fallidas += 1
 
     print("\n" + "=" * 50)
     print("RESUMEN DE OPERACIONES")
